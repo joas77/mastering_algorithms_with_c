@@ -67,7 +67,7 @@ int dlist_ins_prev(DList *list, DListElmt *element, const void *data);
  * @param data 
  * @return int 
  */
-int dlist_remove(DList *list, DListElmt *element, void **data);
+int dlist_remove(DList *list, DListElmt *element, const void **data);
 
 #define dlist_size(list)    ((list)->size)
 #define dlist_head(list)    ((list)->head)
